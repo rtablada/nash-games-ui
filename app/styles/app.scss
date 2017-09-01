@@ -1,0 +1,41 @@
+@import 'pod-styles';
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-1rem);
+
+  & > * {
+    margin: 1rem;
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 70rem;
+}
+
+input {
+  display: block;
+  border-radius: 0.4rem;
+  border: #716B6B solid 1px;
+  width: 100%;
+  padding: 1rem;
+  font: inherit;
+}

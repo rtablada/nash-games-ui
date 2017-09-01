@@ -1,0 +1,10 @@
+<div class="container">
+  <input placeholder="Search for a game..." type="text" value={{query}} oninput={{action "search" value="target.value"}}>
+
+  <ul class="grid-collection">
+    {{#each model as |game|}}
+      {{game-list-item game=game}}
+    {{/each}}
+  </ul>
+
+</div>
